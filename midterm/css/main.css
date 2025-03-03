@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #AAD4CF; /* Overall page background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Central Alignment */
+.wrapper {
+    width: 70%;
+    max-width: 900px;
+    background: #D4E9E7;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    background: url('/images/lone-starfish-wide.jpg') center;
+    text-align: center;
+    padding: 60px 0;
+    background-size: cover;
+    width: 100%;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: 100;
+}
+
+
+
+/* Navigation */
+nav {
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Navigation Divider */
+nav ul li:not(:last-child)::after {
+    content: "|";
+    color: rgb(0, 0, 0);
+    margin:0 100px;
+}
+
+/* Main Content */
+.content {
+    padding: 40px 0;
+}
+
+.image img { 
+    width: 200px; /* Adjust size */
+    float: left; /* Aligns image to the left */
+    margin-right: 15px; /* Adds space between image and text */ 
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.text h2 {
+    font-size: 24px;
+    font-weight: 100;
+}
+
+/* Facts Section */
+.facts h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contact Form */
+.contact {
+    padding: 20px;
+}
+
+.info {
+    background: #D4E9E7; /* Light greenish background */
+    padding: 40px;
+    border: 1px solid black; /* Adds the black border */
+}
+
+.contact h3 {
+    margin-top: 0;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+form textarea {
+    resize: vertical;
+    border: 1px solid black;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button {
+    background: #D4E9E7;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: 1px solid black;
+    cursor: pointer; /*change the cursor*/
+    font-weight: bold;
+}
+
+button:hover {
+    background: #eceaea;
+}
+
+/* Footer */
+footer {
+    text-align: right;
+    padding: 10px;
+
+}
