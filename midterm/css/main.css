@@ -3,27 +3,35 @@ body {
     font-family: Arial, sans-serif;
     background-color: #AAD4CF; /* Overall page background */
     margin: auto;
+    width: 70%;
 }
 
+/* Header */
 .header {
-    max-width: 900px;
+    max-width: 1025px;
     background: #D4E9E7;
     margin: 0 auto;
 }
 
-/* Header */
+
 .header-content {
-    background: url("../images/lone-starfish-wide.jpg") bottom;
     text-align: center;
-    padding: 100px 0;
+    padding: 0px 0;
     background-size: cover;
 }
 
 .header-content h1 {
     color: white;
-    font-weight: lighter;
+    font-size: 300%;
+    padding-top: 50px;
     
 }
+h1  {
+        position: absolute;
+        top: 15%;
+        width: 60%;
+        text-align: center; 
+      }
 
 /* Navigation */
 nav {
