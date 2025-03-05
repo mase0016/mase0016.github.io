@@ -2,8 +2,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #AAD4CF; /* Overall page background */
-    margin: auto;
-    width: 70%;
+    margin: 0 auto;
+    width: auto;
 }
 
 /* Header */
@@ -13,15 +13,12 @@ body {
     margin: 0 auto;
 }
 
-
 .header-content {
     position: relative;
-    /* text-align: center; */
     margin: 0 auto;
-    /* background-size: cover; */
 }
     
-h1  {
+.header-content h1 {
         position: absolute;
         top: 35%;
         width: 100%;
@@ -30,6 +27,9 @@ h1  {
         font-size: 300%;
         padding-top: 50px;
       }
+.header-content img {
+    width: 100%;
+}
 
 /* Navigation */
 nav {
