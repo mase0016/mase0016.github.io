@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #AAD4CF; /* Overall page background */
+    margin: 0 auto;
+    width: auto;
+}
+
+/* Header */
+.header {
+    max-width: 1025px;
+    background: #D4E9E7;
+    margin: 0 auto;
+}
+
+.header-content {
+    position: relative;
+    margin: 0 auto;
+}
+    
+.header-content h1 {
+        position: absolute;
+        top: 35%;
+        width: 100%;
+        text-align: center; 
+        color: white;
+        font-size: 300%;
+        padding-top: 50px;
+      }
+.header-content img {
+    width: 100%;
+}
+
+/* Navigation */
+nav {
+    background-color: #D4E9E7;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul li{
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-right: 1px solid #000000;
+    font-size: 18px;
+}
+
+nav ul li:last-child a {
+    border-right: none;
+}
+
+nav ul li a:hover {
+    background-color: #f1a52f;
+}
+
+/* Main Content */
+main {
+    margin: auto;
+    background: #D4E9E7;
+    padding: 20px;
+}
+
+.intro-content {
+    align-items: center;
+}
+
+.intro img {
+    width: 200px;
+    margin-right: 10px;
+    float: left;
+    padding: 5px;
+}
+
+.facts ul {
+    padding-left: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.contact label {
+    margin-top: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 98%;
+    margin: 5px 0;
+    resize: none;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    border: none;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-direction: row-reverse;
+}
+
+button {
+    width: 80px;
+    padding: 10px;
+    background: #D4E9E7;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: 1px solid black;
+    cursor: pointer; /*change the cursor */
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #f1a52f;
+}
+
+/* Footer */
+footer {
+    text-align: right;
+    padding: 10px;
+    background-color: #D4E9E7;
+}
