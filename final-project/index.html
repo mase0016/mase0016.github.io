@@ -1,166 +1,186 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mase0016 final project</title> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mase0016 final project</title>
 
-    <script src="https://kit.fontawesome.com/873a672f3d.js" crossorigin="anonymous"></script>
-
-    <link href="css/main.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/873a672f3d.js" crossorigin="anonymous"></script>
+  <link href="css/main.css" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <img src="images/logo.png" alt="Three Star Media Logo">
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <form action="#" method="get">
-          <input type="text" placeholder="Search">
-          <button type="submit" aria-label="Search">
-            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-          </button>          
-        </form>
-    </header>
+
+  <header>
+    <img src="images/logo.png" alt="Three Star Media Logo" />
     
-    <section class="welcome" style="background-image: url('images/main-banner.jpg'); background-size: cover;">  <!-- put the bleed image or color in the background-->
-        <div class="wrapper"> <!-- center and add a width to the content -->
-            <h1>Welcome to Three Star Media</h1>
-                <p>Lorem ipsum dolor sit amet cons ectetur adipisicing eslit. In vitae earum atque neque, aperiam cupiditate mollitia amet error assumenda omnis, aspernatur accusamus nesciunt, at possimus laboriosam quibusdam quasi minus provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam unde, architecto atque eum neque deleniti laborum nulla optio asperiores in quod culpa, facere ut suscipit quae modi commodi aliquam dignissimos.</p>
-            <a href="#">Connect with us</a>
-            <i class="fa-sharp fa-solid fa-play"></i>
-        </div>
-    </section>
-    
-        <section id="about">
-            <img src="images/about-us.jpg" alt="About Us Office">
-            <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, unde exercitationem. Deserunt, fuga? Amet itaque dignissimos, veritatis reprehenderit necessitatibus expedita magni obcaecati quaerat, quia modi dolorem distinctio odit quis libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, et temporibus? Nisi libero commodi pariatur facere sed ducimus deleniti quos voluptate officia dolore rem a, cupiditate nesciunt laborum odio dolor?</p>
-        </section>
-    
-        <section id="services">
-            <h2>Our Services</h2>
-        
-            <article>
-            <img src="images/digital.jpg" alt="Digital Transformation">
-            <h3>Digital Transformation</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque facilis sequi! Doloremque perspiciatis illum esse voluptatem excepturi, veritatis rem labore molestiae aperiam vero dolore itaque aliquid? Sint, modi unde!</p>
-            <a href="#">Digital Plans</a>
-            <i class="fa-sharp fa-solid fa-play"></i>
-            </article>
-        
-            <article>
-            <img src="images/marketing.jpg" alt="Marketing">
-            <h3>Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure culpa officiis velit voluptas totam voluptatem quibusdam, magnam itaque, corrupti architecto molestias! Temporibus ad recusandae dolore. Tenetur aliquid molestiae ut quia.</p>
-            <a href="#">Marketing Plans</a>
-            <i class="fa-sharp fa-solid fa-play"></i>
-            </article>
-        
-            <article>
-            <img src="images/video.jpg" alt="Video Production">
-            <h3>Video Production</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea deserunt modi, sit nobis autem, iure, nam earum quae id eos vitae velit ipsum illum hic provident. Sint voluptatem fugiat cupiditate!</p>
-            <a href="#">Video Plans</a>
-            <i class="fa-sharp fa-solid fa-play"></i>
-            </article>
-        
-            <article>
-            <img src="images/web.jpg" alt="Web Development">
-            <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dicta nihil, voluptas ipsum reprehenderit sed debitis cum ex minima vitae obcaecati iste totam quo autem quibusdam rerum facere vero est.</p>
-            <a href="#">Web Plans</a>
-            <i class="fa-sharp fa-solid fa-play"></i>
-            </article>
-        
-            <article>
-            <img src="images/print.jpg" alt="Print">
-            <h3>Print</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, eum praesentium. Nulla, porro nihil! Dolorem officia est, laborum earum, dolore nam sunt modi nobis explicabo beatae ea assumenda neque quibusdam.</p>
-            <a href="#">Print Plans</a>
-            <i class="fa-sharp fa-solid fa-play"></i>
-            </article>
-        </section>
-    
-      <section>
-        <img src="images/vision.jpg" alt="Our Vision">
-        <h2>Our Vision</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maxime ad aut! Vero, obcaecati? Necessitatibus minima libero nobis pariatur. Optio iure illo quis ad excepturi libero distinctio velit architecto et?</p>
-        <a href="#">Learn More</a>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <form class="search-form" action="#" method="get">
+      <label for="search" class="visually-hidden">Search</label>
+      <input type="text" id="search" name="search" placeholder="Search" required />
+      <button type="submit" aria-label="Search">
+        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+  </header>
+
+  <section class="welcome" style="background-image: url('images/main-banner.jpg'); background-size: cover;">  <!-- put the bleed image or color in the background-->
+    <div class="wrapper">
+      <h1>Welcome to Three Star Media</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In vitae earum atque neque, aperiam cupiditate mollitia amet error assumenda omnis, aspernatur accusamus nesciunt, at possimus laboriosam quibusdam quasi minus provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam unde, architecto atque eum neque deleniti laborum nulla optio asperiores in quod culpa, facere ut suscipit quae modi commodi aliquam dignissimos.</p>
+      <a href="#">Connect with us</a>
+      <i class="fa-sharp fa-solid fa-play"></i>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrapper">
+      <img src="images/about-us.jpg" alt="About Us Office" />
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, unde exercitationem. Deserunt, fuga? Amet itaque dignissimos, veritatis reprehenderit necessitatibus expedita magni obcaecati quaerat, quia modi dolorem distinctio odit quis libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, et temporibus? Nisi libero commodi pariatur facere sed ducimus deleniti quos voluptate officia dolore rem a, cupiditate nesciunt laborum odio dolor?</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrapper">
+      <h2>Our Services</h2>
+
+      <article>
+        <img src="images/digital.jpg" alt="Digital Transformation" />
+        <h3>Digital Transformation</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <a href="#">Digital Plans</a>
         <i class="fa-sharp fa-solid fa-play"></i>
-      </section>
-    
-      <section id="team">
-        <h2>Our Team</h2>
-    
-        <article>
-          <img src="images/john.jpg" alt="John Doe Portrait">
-          <h3>John Doe</h3>
-            <p>CEO and Co-owner</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis ex veniam libero temporibus magnam voluptatibus id molestias sunt neque. Blanditiis tempore deleniti doloribus accusantium illo sint sunt ex quidem excepturi?</p>
-        </article>
-    
-        <article>
-          <img src="images/bob.jpg" alt="Bob Rite Portrait">
-          <h3>Bob Rite</h3>
-            <p>CFO and Co-owner</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam nesciunt odit molestiae voluptatibus a sunt nemo numquam voluptates porro? Nisi, doloribus dolore ullam minus unde blanditiis nostrum tempora necessitatibus.</p>
-        </article>
-      </section>
-    
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <h3>Send us a message</h3>
-            <form action="#" method="post">
-            <label for="full-name">Full Name</label><br>
-            <input type="text" id="full-name" name="full-name"><br>
-        
-            <label for="email">Email</label><br>
-            <input type="email" id="email" name="email"><br>
-        
-            <label for="message">Message</label><br>
-            <textarea id="message" name="message"></textarea><br>
-        
-            <button type="submit">Send</button>
-            </form>
-        </section>
-    
-        <section>
-            <h2>Hours of Operation</h2>
-            <table>
-            <thead>
-                <tr>
-                <th>Days</th>
-                <th>Hours</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <td>Monday - Friday</td>
-                <td>9 AM - 6 PM</td>
-                </tr>
-                <tr>
-                <td>Saturday - Sunday</td>
-                <td>Closed</td>
-                </tr>
-            </tbody>
-            </table>
-        </section>
-    
-        <section>
-            <h2>Location</h2>
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2548.380590312405!2d-75.75536919999999!3d45.349844899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e1!3m2!1sen!2sca!4v1743077695509!5m2!1sen!2sca" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-    
-        <footer>
-            <p>&copy; Copyright Three Star Media, 2020</p>
-            <p>All images are taken from Unsplash</p>
-        </footer>
+      </article>
+
+      <article>
+        <img src="images/marketing.jpg" alt="Marketing" />
+        <h3>Marketing</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <a href="#">Marketing Plans</a>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </article>
+
+      <article>
+        <img src="images/video.jpg" alt="Video Production" />
+        <h3>Video Production</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <a href="#">Video Plans</a>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </article>
+
+      <article>
+        <img src="images/web.jpg" alt="Web Development" />
+        <h3>Web Development</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <a href="#">Web Plans</a>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </article>
+
+      <article>
+        <img src="images/print.jpg" alt="Print" />
+        <h3>Print</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <a href="#">Print Plans</a>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <img src="images/vision.jpg" alt="Our Vision" />
+      <h2>Our Vision</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+      <a href="#">Learn More</a>
+      <i class="fa-sharp fa-solid fa-play"></i>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="wrapper">
+      <h2>Our Team</h2>
+
+      <article>
+        <img src="images/john.jpg" alt="John Doe Portrait" />
+        <h3>John Doe</h3>
+        <p>CEO and Co-owner</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
+      </article>
+
+      <article>
+        <img src="images/bob.jpg" alt="Bob Rite Portrait" />
+        <h3>Bob Rite</h3>
+        <p>CFO and Co-owner</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrapper">
+      <h2>Contact Us</h2>
+      <h3>Send us a message</h3>
+      <form action="#" method="post">
+        <label for="full-name">Full Name</label><br>
+        <input type="text" id="full-name" name="full-name" required />
+        <br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required /><br>
+
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <br>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <h2>Hours of Operation</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Days</th>
+            <th>Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday - Friday</td>
+            <td>9 AM - 6 PM</td>
+          </tr>
+          <tr>
+            <td>Saturday - Sunday</td>
+            <td>Closed</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <h2>Location</h2>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2548.380590312405!2d-75.75536919999999!3d45.349844899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e1!3m2!1sen!2sca!4v1743077695509!5m2!1sen!2sca" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; Copyright Three Star Media, 2020</p>
+    <p>All images are taken from Unsplash</p>
+  </footer>
+
 </body>
-</html>    
+</html>
