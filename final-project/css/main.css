@@ -1,6 +1,477 @@
-.map {
-    width: 40%;
-    height: 400px;
-    border: 0;
+/* === Main Styles === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  background-color: #222222;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* === Headings and Text === */
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 25px;
+  padding-top: 35px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+
+h4 {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.5em;
+  padding-bottom: 17px;
+}
+
+/* === Link Styles === */
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:focus {
+  background-color: #c78c06;
+  color: #222222;
+  padding: 18px;
+}
+
+/* === Container === */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* === Header Styles === */
+.header-bg {
+  background-color: #222222;
+  padding: 14px;
+}
+
+.header-nav {
+  background-color: #222222;
+  color: #c78c06;
+}
+
+.logo-bg {
+  background-color: #c78c06;
+  padding: 20px 0;
+}
+
+#main-logo {
+  padding-left: 0;
+}
+
+/* === Navigation === */
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 19px;
+  justify-content: space-between;
+}
+
+.nav-bar li a {
+  display: block;
+  padding: 1.4em;
+}
+
+.nav-bar li a.active {
+  background-color: #c78c06;
+  color: #222222;
+  padding: 1em;
+}
+
+/* === Search Bar in Header === */
+.search-nav {
+  width: 100%;
+  margin: 0;
+  border: 1px solid #666;
+  border-radius: 2px;
+  font-size: 19px;
+  padding: 10px 0;
+}
+
+#header-search {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+#header-search button {
+  border: #c78c06 0.5px solid;
+  border-radius: 2px;
+  padding: 6px;
+  font-size: 26px;
+  background: transparent;
+  color: #c78c06;
+  cursor: pointer;
+}
+
+/* === Welcome Section === */
+.welcome {
+  background-image: url('../images/main-banner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  color: white;
+  padding: 50px 0;
+}
+
+.welcome-rectangle {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 20px 0;	
+}
+
+.welcome-text {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#connect-btn {
+  padding: 20px 20px;
+  border: 0;
+  font-size: 20px;
+  background-color: #c78c06;
+  font-family: Arial, sans-serif;
+}
+
+/* === About Us Section === */
+.about-us {
+  background-color: #ffe6ac;
+  padding: 14px;
+}
+
+#about-section-bg img {
+  width: 100%;
+}
+
+#about-text {
+  padding: 10px;
+  margin-bottom: -15px; 
+}
+
+#about-section-bg {
+  background-color: #ffe6ac;
+}
+
+.desktop-white-bg {
+  background-color: white;
+}
+
+/* === Services Section === */
+.services-section {
+  background-color: white;
+  padding: 10px;
+}
+
+.services-flexbox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.services-flex-item {
+  background-color: #ffe6ac;
+  padding-bottom: 14px;
+}
+
+.services-flex-item p,
+.services-flex-item h3,
+.services-flex-item button {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.services-flexbox img {
+  width: 100%;
+}
+
+.services-flex-item:last-child {
+  margin-bottom: 15px;
+}
+
+.services-flex-item button {
+  background-color: #222222;
+  color: white;
+  font-family: Arial, sans-serif;
+  border: 0;
+  padding: 25px;
+  font-size: 20px;
+}
+
+/* === Vision Section === */
+.vision-section {
+  background-image: url('../images/vision.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding: 15px;
+}
+
+.vision-section h3 {
+  padding-top: 30px;
+}
+
+.vision-section p {
+  padding-top: 0px;
+}
+
+.vision-section button {
+  background-color: rgba(34, 34, 34, 0.7);
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 35px;
+  font-size: 23px;
+  border: #c78c06 0.5px solid;
+}
+
+/* === Team Section === */
+.team-section {
+  background-color: white;
+  padding: 10px;
+}
+
+.team-flexbox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.team-flex-item {
+  background-color: #ffe6ac;
+}
+
+.team-flex-item img {
+  width: 100%;
+}
+
+.team-flex-item h3,
+.team-flex-item h4,
+.team-flex-item p,
+.team-flex-item hr {
+  margin-right: 14px;
+  margin-left: 14px;
+}
+
+.team-flex-item hr {
+  border: none;
+  height: 2px;
+  background-color: #c78c06;
+}
+
+/* === Contact Section === */
+.contact-section {
+  background-color: white;
+  padding: 14px;
+}
+
+.form-item {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+.contact-type {
+  width: 100%;
+  padding: 5px;
+  border: #666 0.5px solid;
+  border-radius: 2px;
+}
+
+textarea {
+  width: 100%;
+  padding: 6px;
+  margin: 6px 0;
+  border: #666 0.5px solid;
+  border-radius: 2px;
+  height: 160px;
+  resize: none;
+}
+
+#submit-btn {
+  background-color: #222222;
+  color: #c78c06;
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 2px;
+}
+
+table {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  margin-bottom: -15px;
+}
+
+table, th, td {
+  border: 0.5px solid;
+}
+
+th {
+  background-color: #ffe6ac;
+}
+
+th, td {
+  padding: 20px;
+}
+
+/* === Google Map Embed === */
+.google-map iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+/* === Footer === */
+footer {
+  margin-top: 30px;
+  padding-left: 15px;
+  background-color: #222;
+  color: #c78c06;
+}
+
+footer p {
+  color: #c78c06;
+}
+
+#footer-link {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  text-decoration: underline;
+}
+
+/* === Media Queries for Desktop (≥ 760px) === */
+@media screen and (min-width:760px) {
+  /* Typography scaling */
+  h1 { font-size: 81px; }
+  h2 { font-size: 54px; }
+  h3 { font-size: 36px; }
+  h4 { font-size: 18px; }
+  p  { font-size: 16px; }
+
+  /* Header layout */
+  .header-bg {
+    display: flex;
+    flex-direction: row;
   }
-  
+
+  .logo-bg {
+    background-color: transparent;
+  }
+
+  .nav-bar {
+    flex-direction: row;
+    font-size: 20px;
+    padding: 1.8em 0;
+  }
+
+  .nav-bar li a {
+    padding: 1.2em 2em;
+  }
+
+  #main-nav {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1.8fr;
+  }
+
+  .nav-bar li a.active {
+    padding: 1.2em 2.2em;
+  }
+
+  #header-search {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-nav {
+    padding: 12px 0;
+  }
+
+  /* About section in two columns */
+  .about-us {
+    display: flex;
+  }
+
+  #about-section-bg img {
+    width: 50%;
+  }
+
+  /* Services in grid layout */
+  .services-flexbox {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .services-flex-item.one   { grid-column: 1 / span 3; }
+  .services-flex-item.two   { grid-column: 4 / span 3; }
+  .services-flex-item.three { grid-column: 1 / span 2; }
+  .services-flex-item.four  { grid-column: 3 / span 2; }
+  .services-flex-item.five  { grid-column: 5 / span 2; margin-bottom: 0; }
+
+  .services-flex-item button {
+    width: calc(100% - 30px);
+  }
+  /* Team layout adjustments */
+  .team-flexbox {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px;
+  }
+
+  .team-flex-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .reverse-layout { direction: rtl; }
+  .reverse-layout > div { direction: ltr; }
+
+  .team-flex-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Contact section grid layout */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .contact-section h2 {
+    margin-bottom: 10px;
+  }
+
+  .contact-section h3 {
+    margin-bottom: 0;
+  }
+
+  #contact-form, #map-container {
+    grid-row: 1 / span 1;
+  }
+
+  #hours-table {
+    grid-column: 1 / span 2;
+    padding: 15px;
+  }
+}
